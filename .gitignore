@@ -1,0 +1,15 @@
+.bin/
+node_modules/
+.idea/
+.DS_Store
+.npm-debug.log
+coverage/
+.rpt2_cache
+.vscode/
+/packages/docs/.vuepress/.temp/
+/packages/docs/.vuepress/.cache/
+# .vuepress/
+
+dist/
+yarn-debug.log*
+yarn-error.log*
