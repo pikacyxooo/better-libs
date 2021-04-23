@@ -1,0 +1,10 @@
+16 error Error: Command failed with exit code 1: git remote update
+16 error fatal: unable to access 'https://github.com/pikacyxooo/better-libs.git/': Failed to connect to github.com port 443: Timed out
+16 error error: Could not fetch origin
+16 error Fetching origin
+16 error     at makeError (E:\nvm\nvm\v12.19.0\node_modules\lerna\node_modules\execa\lib\error.js:59:11)
+16 error     at Function.module.exports.sync (E:\nvm\nvm\v12.19.0\node_modules\lerna\node_modules\execa\index.js:186:17)
+16 error     at Object.execSync (E:\nvm\nvm\v12.19.0\node_modules\lerna\node_modules\@lerna\child-process\index.js:39:16)
+16 error     at updateRemote (E:\nvm\nvm\v12.19.0\node_modules\lerna\node_modules\@lerna\version\lib\is-behind-upstream.js:34:16)
+16 error     at isBehindUpstream (E:\nvm\nvm\v12.19.0\node_modules\lerna\node_modules\@lerna\version\lib\is-behind-upstream.js:16:3)
+16 error     at VersionCommand.initialize (E:\nvm\nvm\v12.19.0\node_modules\lerna\node_modules\@lerna\version\index.js:153:9)
