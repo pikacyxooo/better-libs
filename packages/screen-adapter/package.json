@@ -1,13 +1,17 @@
 {
   "name": "@better-libs/screen-adapter",
-  "version": "0.0.1-alpha.0",
+  "version": "0.0.2-alpha.0",
   "description": "",
   "main": "dist/screen-adapter.js",
   "module": "dist/screen-adapter.esm.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [],
   "author": "charyux",
-  "license": "MIT"
+  "license": "MIT",
+  "gitHead": "3b7424ca6f29bc6c46828f6c9a1eb955b137f479"
 }
