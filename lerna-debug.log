@@ -1,10 +1,15 @@
-16 error Error: Command failed with exit code 1: git remote update
-16 error fatal: unable to access 'https://github.com/pikacyxooo/better-libs.git/': Failed to connect to github.com port 443: Timed out
-16 error error: Could not fetch origin
-16 error Fetching origin
-16 error     at makeError (E:\nvm\nvm\v12.19.0\node_modules\lerna\node_modules\execa\lib\error.js:59:11)
-16 error     at Function.module.exports.sync (E:\nvm\nvm\v12.19.0\node_modules\lerna\node_modules\execa\index.js:186:17)
-16 error     at Object.execSync (E:\nvm\nvm\v12.19.0\node_modules\lerna\node_modules\@lerna\child-process\index.js:39:16)
-16 error     at updateRemote (E:\nvm\nvm\v12.19.0\node_modules\lerna\node_modules\@lerna\version\lib\is-behind-upstream.js:34:16)
-16 error     at isBehindUpstream (E:\nvm\nvm\v12.19.0\node_modules\lerna\node_modules\@lerna\version\lib\is-behind-upstream.js:16:3)
-16 error     at VersionCommand.initialize (E:\nvm\nvm\v12.19.0\node_modules\lerna\node_modules\@lerna\version\index.js:153:9)
+40 error Error: Command failed with exit code 1: git commit -m v0.0.3-alpha.0
+40 error On branch main
+40 error Your branch is ahead of 'origin/main' by 1 commit.
+40 error   (use "git push" to publish your local commits)
+40 error
+40 error Changes not staged for commit:
+40 error 	modified:   lerna-debug.log
+40 error 	modified:   package.json
+40 error 	modified:   packages/screen-adapter/Readme.md
+40 error
+40 error no changes added to commit
+40 error     at makeError (/usr/local/lib/node_modules/lerna/node_modules/execa/lib/error.js:59:11)
+40 error     at handlePromise (/usr/local/lib/node_modules/lerna/node_modules/execa/index.js:114:26)
+40 error     at processTicksAndRejections (internal/process/task_queues.js:93:5)
+40 error     at async Promise.all (index 0)
