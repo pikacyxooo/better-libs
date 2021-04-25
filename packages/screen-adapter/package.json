@@ -1,6 +1,6 @@
 {
   "name": "@better-libs/screen-adapter",
-  "version": "0.0.2-alpha.0",
+  "version": "0.0.3-alpha.0",
   "description": "",
   "main": "dist/screen-adapter.js",
   "module": "dist/screen-adapter.esm.js",
@@ -9,6 +9,12 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "homepage": "https://github.com/pikacyxooo/better-libs",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/pikacyxooo/better-libs.git",
+    "directory": "packages/screen-adapter"
   },
   "keywords": [],
   "author": "charyux",
