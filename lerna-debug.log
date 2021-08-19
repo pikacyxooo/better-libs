@@ -1,15 +1,22 @@
-40 error Error: Command failed with exit code 1: git commit -m v0.0.3-alpha.0
-40 error On branch main
-40 error Your branch is ahead of 'origin/main' by 1 commit.
-40 error   (use "git push" to publish your local commits)
-40 error
-40 error Changes not staged for commit:
-40 error 	modified:   lerna-debug.log
-40 error 	modified:   package.json
-40 error 	modified:   packages/screen-adapter/Readme.md
-40 error
-40 error no changes added to commit
-40 error     at makeError (/usr/local/lib/node_modules/lerna/node_modules/execa/lib/error.js:59:11)
-40 error     at handlePromise (/usr/local/lib/node_modules/lerna/node_modules/execa/index.js:114:26)
-40 error     at processTicksAndRejections (internal/process/task_queues.js:93:5)
-40 error     at async Promise.all (index 0)
+38 error Error: Command failed with exit code 1: git commit -m v0.0.6-alpha.0
+38 error On branch main
+38 error Your branch is ahead of 'origin/main' by 4 commits.
+38 error   (use "git push" to publish your local commits)
+38 error
+38 error Changes not staged for commit:
+38 error   (use "git add <file>..." to update what will be committed)
+38 error   (use "git restore <file>..." to discard changes in working directory)
+38 error 	modified:   lerna-debug.log
+38 error 	modified:   packages/example/static/index.less
+38 error 	modified:   packages/screen-adapter/Readme.md
+38 error 	modified:   packages/screen-adapter/src/index.ts
+38 error
+38 error Untracked files:
+38 error   (use "git add <file>..." to include in what will be committed)
+38 error 	packages/example/static/img/test2.jpg
+38 error
+38 error no changes added to commit (use "git add" and/or "git commit -a")
+38 error     at makeError (F:\cyx\internal\better-libs\node_modules\execa\lib\error.js:59:11)
+38 error     at handlePromise (F:\cyx\internal\better-libs\node_modules\execa\index.js:114:26)
+38 error     at processTicksAndRejections (internal/process/task_queues.js:97:5)
+38 error     at async Promise.all (index 0)

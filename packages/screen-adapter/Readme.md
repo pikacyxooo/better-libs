@@ -10,12 +10,12 @@ yarn add @better-libs/screen-adapter -S
 ```
 
 ```js
-import ScreenAdapter from '@better-libs/screen-adapter';
+import ScreenAdapter from "@better-libs/screen-adapter";
 
 new ScreenAdapter({
-  wrapper: '#app',
-  direction: 'horizontal',
-  mode: 'fill',
+  wrapper: "#app",
+  direction: "horizontal",
+  mode: "fill",
 });
 ```
 
@@ -29,9 +29,9 @@ new ScreenAdapter({
 
 ```js
 new ScreenAdapter({
-  wrapper: '#app',
-  direction: 'horizontal',
-  mode: 'fill',
+  wrapper: "#app",
+  direction: "horizontal",
+  mode: "fill",
 });
 ```
 
@@ -40,12 +40,12 @@ new ScreenAdapter({
 ScreenAdapter 可以在初始化时传入一个 options,比如
 
 ```js
-import ScreenAdapter from '@better-libs/screen-adapter';
+import ScreenAdapter from "@better-libs/screen-adapter";
 
 new ScreenAdapter({
-  wrapper: '#app',
-  direction: 'horizontal',
-  mode: 'fill',
+  wrapper: "#app",
+  direction: "horizontal",
+  mode: "fill",
 });
 ```
 
@@ -97,3 +97,5 @@ new ScreenAdapter({
 - **类型**: number
 - **默认**: 当 direction 为 vertical 时为屏幕短边，相反则为屏幕长边
 - **说明**: 设置 wrapper 容器高度
+
+> github 地址：https://github.com/pikacyxooo/better-libs/tree/main/packages/screen-adapter

@@ -1,8 +1,8 @@
 /**
  * @module ScreenAdapter 屏幕适配组件
  */
-import { addPrefixCss, addPrefixJs } from './utils/styleUtil';
-import { SCREEN_PARAMS } from './ScreenConst';
+import { addPrefixCss, addPrefixJs } from "./utils/styleUtil";
+import { SCREEN_PARAMS } from "./ScreenConst";
 
 interface ScreenAdapterOption {
   wrapper: string;
@@ -29,16 +29,17 @@ class ScreenAdapter {
     this.width = 0;
     this.height = 0;
     this.dom = document.querySelector(options.wrapper);
-    this.mode = options.mode || 'fill';
-    this.direction = options.direction || 'vertical';
+    this.mode = options.mode || "fill";
+    this.direction = options.direction || "vertical";
     this._initSize(options);
     this._initDom();
 
     window.addEventListener(
-      'orientationchange' in window ? 'orientationchange' : 'resize',
+      "orientationchange" in window ? "orientationchange" : "resize",
       () => {
         if (this.cd) return;
         this.cd = window.setTimeout(() => {
+          this._initSize(options);
           this._parseResize();
           this.cd = null;
         }, 350);
@@ -54,9 +55,9 @@ class ScreenAdapter {
     const _cw = document.documentElement.clientWidth;
     _sw = _sw < _sh ? _sw : _sh;
     if (_sw === _cw) {
-      return 'vertical';
+      return "vertical";
     } else {
-      return 'horizontal';
+      return "horizontal";
     }
   }
 
@@ -66,11 +67,11 @@ class ScreenAdapter {
    */
   private _initDom() {
     if (!this.dom) return;
-    let style = '';
+    let style = "";
     style += `width: ${this.width}px;`;
     style += `height: ${this.height}px;`;
     this.dom.style.cssText = style;
-    addPrefixCss(this.dom, 'transform-origin', '0% 0%');
+    addPrefixCss(this.dom, "transform-origin", "0% 0%");
     // addPrefixCss(this.dom, 'transition', 'transform 0.1s ease-in-out');
     this._parseResize();
   }
@@ -85,7 +86,7 @@ class ScreenAdapter {
       let _t = _cw;
       _cw = _cw < _ch ? _t : _ch;
       _ch = _t >= _ch ? _t : _ch;
-      if (options.direction === 'vertical') {
+      if (options.direction === "vertical") {
         this.width = _cw;
         this.height = _ch;
       } else {
@@ -120,7 +121,7 @@ class ScreenAdapter {
     let _cw = document.documentElement.clientWidth;
     let _ch = document.documentElement.clientHeight;
     const [widthRatio, heightRatio] = this._calcRatio(_cw, _ch);
-    let cssVal = '';
+    let cssVal = "";
     if (this.direction === ScreenAdapter.detectOrient()) {
       if (this.mode === SCREEN_PARAMS.FILL) {
         cssVal = `matrix(${widthRatio},0,0,${heightRatio},0,0)`;
@@ -138,7 +139,9 @@ class ScreenAdapter {
         cssVal = `matrix(0,${widthRatio},-${widthRatio},0,${_cw},0)`;
       }
     }
-    addPrefixCss(this.dom, 'transform', cssVal);
+    addPrefixCss(this.dom, "transform", cssVal);
+    addPrefixCss(this.dom, "width", this.width + "px;");
+    addPrefixCss(this.dom, "height", this.height + "px;");
   }
 }
 
